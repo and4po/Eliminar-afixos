@@ -5,6 +5,7 @@ from re import sub
 arxiu = 0
 
 filepath = input("Ruta: ")
+filepath = filepath.replace('"', '')
 if os.path.isdir(filepath) == False:
     print("El directori no existeix!")
 tipus = input("Tipus(Prefix o Sufix): ")
